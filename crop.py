@@ -19,7 +19,7 @@ def crop_prediction(input_data):
 # Streamlit app
 def main():
 
-    # image_path = "https://imgs.search.brave.com/2gUr1UJX3A-6TxOihOZWoh5xeZ3sQi0kYzpmjxBbIrk/rs:fit:860:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzA0LzA3Lzk2LzMy/LzM2MF9GXzQwNzk2/MzIyNV9kaVRwMGtI/QU9GVk1lbE5WdGdy/S1MzczhtZGwzYUtZ/My5qcGc"
+    # image_path = "https://pbs.twimg.com/media/FMeggIDVEAANIA7?format=jpg&name=900x900"
     # page_bg_img = f'''
     # <style>
     # .stApp {{
@@ -27,14 +27,16 @@ def main():
     # background-size: cover;
     # background-repeat: no-repeat;
     # }}
+    # .stText {{ 
+    # color: black; 
+    # }}
     # </style>
     # '''
     # st.markdown(page_bg_img, unsafe_allow_html=True)
 
-
     with st.sidebar:
         st.image('https://imgs.search.brave.com/WdhChz-0DHOwa3vXCaJs42_wYNkoH45sq757CckmrrM/rs:fit:860:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzA1LzE0LzM0LzYw/LzM2MF9GXzUxNDM0/NjA2M19nMDY0YmdQ/TlE5SHUyVFBOR0RH/Znd0QmRjdWhQbmNo/NS5qcGc')
-        st.title('For the Krishis🌾')
+        st.title(':black[For the Krishis🌾]')
         st.info('with ❤️ by Anmol and Soumya')
         with st.expander(" ℹ️ Information", expanded=True):
             st.write("""
@@ -43,7 +45,7 @@ def main():
 
             """)
     
-    st.title("Krishi Mitra👨‍🌾")
+    st.title("Krishi Mitra 👨‍🌾")
     # st.write("Enter the following features:")
 
     col1, col2  = st.columns([20,2])
